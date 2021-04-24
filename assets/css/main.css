@@ -72,6 +72,35 @@ input, select, textarea {
 	appearance: none;
 }
 
+.tile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+	flex-direction: column;
+}
+
+.tile > .icon {
+	color: #666;
+	font-size: 8vw;
+	align-self: center;
+	padding-top: 10vh;
+}
+
+.tile > .label {
+	color: #444;
+	font-size: 3vw;
+	padding-top: 3vh;
+}
+
+.tile:hover > .icon {
+	color:#faa296;
+}
+
+.tile:hover > .label {
+	color:#faa296;
+}
+
 /* Row */
 
 	.row {
