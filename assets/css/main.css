@@ -78,6 +78,7 @@ input, select, textarea {
 	align-items: center;
 	height: 15vh;
 	flex-direction: column;
+	margin-bottom: 5vh;
 }
 
 .tile > .icon {
@@ -99,6 +100,10 @@ input, select, textarea {
 
 .tile:hover > .label {
 	color:#faa296;
+}
+
+.dark-text {
+	color: #444;
 }
 
 /* Row */
