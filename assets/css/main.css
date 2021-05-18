@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
-@import url("fontawesome-all.min.css");
+@import url("https://kit.fontawesome.com/7314ed30dd.js");
+/* @import url("fontawesome-all.min.css"); */
 
 /*
 	Astral by HTML5 UP
@@ -104,6 +105,29 @@ input, select, textarea {
 
 .dark-text {
 	color: #444;
+}
+
+.contact-icon {
+	/* color: #666; */
+	color: #8e607a;
+	font-size: 2em;
+	padding-right: 1vw;
+}
+
+.notice {
+	border-color: #666;
+	border-style: solid;
+	border-radius: 10px;
+}
+
+a {
+	text-decoration: none;
+	color:#8e607a;
+	font-weight:400;
+}
+
+a:hover{
+	color: #dfa898;
 }
 
 /* Row */
@@ -1400,7 +1424,8 @@ input, select, textarea {
 
 	strong, b, h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #363636;
+		/* color: #363636; */
+		color: #633b4f;
 	}
 
 	h1 {
@@ -1416,6 +1441,10 @@ input, select, textarea {
 	h3, h4, h5, h6 {
 		font-size: 1.25em;
 		letter-spacing: -0.015em;
+	}
+
+	p {
+		color: #633b4f;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1567,7 +1596,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			/* color: #aaa; */
 		}
 
 		@media screen and (max-width: 736px) {
