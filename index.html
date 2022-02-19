@@ -25,6 +25,8 @@
 		<!-- Nav -->
 		<nav id="nav">
 			<a href="#" class="icon solid fa-home"><span>Home</span></a>
+			<a href="#technical" class="icon solid fa-code"><span>Technical</span></a>
+			<a href="#creative" class="icon solid fa-paint-brush"><span>Creative</span></a>
 			<a href="#pound" class="icon solid fa-bolt"><span>POUND Fit</span></a>
 			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 		</nav>
@@ -37,13 +39,441 @@
 			<article id="home" class="panel intro">
 				<header>
 					<h1>Sierra Acy</h1>
-					<p>Coming Soon!</p>
-					<p>In the meantime, please visit the POUND Fit tab to join my classes!</p>
+					<p>Code, POUND, Create!</p>
 				</header>
 				<a href="#work" class="jumplink pic">
 					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
 					<img src="images/me2.jpg" alt="" />
 				</a>
+			</article>
+
+			<!-- --------------------------------------- -->
+
+			<!-- Technical -->
+			<article id="technical" class="panel">
+				<header>
+					<h2>Technical</h2>
+				</header>
+				<section>
+					<h3>Projects</h3>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#resume" class="icon fa-file-alt"></a>
+							<p class="label">Resume</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#media-flashcards" class="icon solid fa-sign-language"></a>
+							<p class="label">Media Flashcards</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#hogwarts-battle" class="icon solid fa-dice"></a>
+							<p class="label">Hogwarts Battle</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#pound-setlist-generator" class="icon solid fa-list-ol"></a>
+							<p class="label">Pound Setlist Generator</p>
+						<!-- </div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#teals" class="icon solid fa-chalkboard-teacher"></a>
+							<p class="label">TEALS</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#teals" class="icon solid fa-chalkboard-teacher"></a>
+							<p class="label">Mentors in Tech</p>
+						</div> -->
+					</div>
+				</section>
+				<section>
+					<h3>Community</h3>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#teals" class="icon solid fa-school"></a>
+							<p class="label">TEALS</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#mentorship" class="icon solid fa-handshake"></a>
+							<p class="label">Mentorship</p>
+						</div>
+						<!-- <div class="col-4 col-6-medium col-12-small tile">
+							<a href="#interns" class="icon solid fa-users"></a>
+							<p class="label">Interns</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small tile">
+							<a href="#mentorship" class="icon solid fa-handshake"></a>
+							<p class="label">Mentorship</p>
+						</div> -->
+					</div>
+				</section>
+			</article>
+
+			<!-- Resume -->
+			<article id="resume" class="panel">
+				<a href="#technical">
+					<span class="arrow icon solid fa-chevron-left">Back to Technical</span>
+				</a>
+				<br>
+				<br>
+				<header>
+					<h1>Resume</h1>
+				</header>
+				<a href="./assets/acy_sierra_resume.pdf" download>
+					<h3>Download Resume</h3>
+				</a>
+				<br>
+				<section>
+					<h2>Education</h2>
+					August 2013 - December 2016<br>
+					<h3>The University of Texas at Austin</h3>
+					<p><b>Bachelor of Science and Arts in Computer Science, Minor in Music</b></p>
+					<br>
+					<h2>Experience</h2>
+					November 2021 - Present
+					<h3>HBOMax, Software Engineer II</h3>
+					<p><b>Data Pipelines</b></p>
+					<ul>
+						<li>Parsed csv and sql files using Python to build new Snowflake sql commands, tasks, and functions for inserting data into Snowflake using Sqitch</li>
+					</ul>
+					<br></br>
+					November 2020 - October 2021
+					<h3>Microsoft, Software Engineer I</h3>
+					<p><b>Datacenter Planning and Execution Land Engineering</b></p>
+					<ul>
+						<li>Designed and implemented data migration script in Power Automate Flow from legacy data input to new tool in 
+							Dynamics365. Required for MVP product launch, allowing minimal disruption to end users switching from one 
+							system to the next</li>
+						<li>Created demo videos for 6 different scenarios for internal UAT users to demonstrate how to use the new tool
+						</li>
+						<li>Worked closely with business to design and implement spend tracking feature using Power Automate Flow to run 
+							a scheduled synchronization job, pulling data from a SQL DB and displaying changes to end user in Dynamics365.</li>
+						<li>Implemented SLA tracking feature using built in Dynamics365 SLA capabilities, allowing Power BI reports to more 
+							accurately reflect amount of time an item spent in motion, factoring in On Hold time</li>
+						<li>Implemented feature to clone a record using Power Automate Flow, allowing for quick and easy creation of new 
+							record with very similar values</li>
+						<li>Implemented email notifications using Power Automate Flow, triggered by change events in Dynamics365 records.</li>
+						<li>Implemented custom logic in js to auto-populate placeholders in email template with data from CRM entities</li>
+						<li>Wrote clear and complete documentation for each feature, including screenshots and step-by-step instructions for 
+							pieces that may need to be replicated</li>
+					</ul>
+					April 2017 - November 2020<br>
+					<h3>The Walt Disney Company, Software Engineer</h3>
+					<p><b>Genome - Video Search and Metadata Service</b></p>
+					<ul>
+						<li>Took ownership of three REST APIs, a data transformer and indexer, and the Genome UI for
+							searching and browsing
+							content, and became major contributor on three other services</li>
+						<li>Developed and managed data pipeline from data ingestion through UI display using
+							Elasticsearch, Java, REST API,
+							AngularJS, SPARQL, various AWS services</li>
+						<li>Prepared for two high-profile demos to The Simpsons creative team and Pixar executives
+							in a highly compressed
+							timeframe by collaborating across several teams, ingesting multiple data streams,
+							finding and fixing bugs, and
+							displaying new data in the Genome UI</li>
+						<li>Migrated API service to query Elasticsearch instead of MarkLogic triplestore database to
+							improve response time and
+							synchronize data across APIs</li>
+						<li>Designed and implemented high priority feature across API, data transformation, and UI
+							layers using Java and
+							AngularJS</li>
+						<li>Worked with Project Manager to refine versioning and release management processes</li>
+					</ul>
+					<p><b>GoPublish - Content Management System</b></p>
+					<ul>
+						<li>Rearchitected Camel integration to assist in cloud migration to Amazon Web Services</li>
+						<li>Designed and implemented new UI in React for admin pages</li>
+						<li>Designed and implemented cloud-based architecture in AWS for integration of custom ESPN
+							Photo Tool with 3rd party tool</li>
+					</ul>
+					<p><b>Archimedes Media Asset Management System</b></p>
+					<ul>
+						<li>Designed and developed next-generation UI using Vue.js and Webpack</li>
+					</ul>
+					<p><b>Disney Community and Recruitment</b></p>
+					<ul>
+						<li>Volunteered to take on Disney Seattle office Internship Program Leader position</li>
+						<li>Organized and mentored appx 60 Seattle interns over three years throughout internships,
+							including weekly sync-ups,
+							intern presentations, social events, advice and guidance</li>
+						<li>Organized and conducted job shadowing opportunities for 5 Computer Science students from 2
+							universities in Seattle</li>
+						<li>Participated in 6 recruiting and mentoring events at universities in Washington, California,
+							and Texas</li>
+					</ul>
+					January - April 2017
+					<h3>The Walt Disney Company, Content Management System Intern</h3>
+					<ul>
+						<li>Designed and developed new-generation UI for Archimedes Media Asset Management system using
+							Vue.js and Webpack</li>
+						<li>Worked with Archimedes and Genome teams to research and design Digital Rights Management
+							solutions for each project</li>
+					</ul>
+					June - August 2016
+					<h3>The Walt Disney Company, Emerging Technology Solutions Intern</h3>
+					<ul>
+						<li>Designed and developed Disney IoT Room Detective utilizing Raspberry Pis and motion sensors
+							to detect vacancy of
+							conference rooms, written in Node.js, AngularJS, HTML, and MongoDB</li>
+						<li>Designed and constructed configurations of Raspberry Pis with motion sensors</li>
+						<li>Implemented physical and digital security features on Raspberry Pi</li>
+						<li>Designed and developed UI to display room vacancies for display screens at the entrance to
+							each floor</li>
+						<li>Implemented automation for construction and deployment of Raspberry Pis</li>
+					</ul>
+					June - August 2015
+					<h3>The Walt Disney Company, Unified Messaging Web Development Intern</h3>
+					<ul>
+						<li>Created the Preview feature for the internal Disney Courier application using Javascript,
+							HTML, jQuery, and Knockout</li>
+						<li>Updated and created new pages for the Courier UI</li>
+						<li>Participated in all sprints and sprint planning sessions</li>
+					</ul>
+					<h2>Skills</h2>
+					<ul>
+						<li>Java, JavaScript, React, AngularJS, HTML</li>
+						<li>Amazon Web Services: S3, SQS, Elasticsearch, Lambda, ECS, EC2, SNS</li>
+						<li>Public Speaking, Mentorship, Event Organization and Coordination</li>
+					</ul>
+					<h2>Community Involvement</h2>
+					<ul>
+						<li>TEALS Volunteer TA and Teacher for AP Computer Science A courses at 2 Washington High
+							Schools, June 2017 – June 2020, June 2021-Present</li>
+						<li>Department of Computer Science Lean In Circle member and moderator, UT Austin 2016</li>
+						<li>Design Collective Workshop Instructor, UT Austin 2015-2016</li>
+						<li>Hour of Code Volunteer Coordinator for the Department of Computer Science, UT Austin 2015
+							and 2016</li>
+						<li>Grace Hopper Celebration of Women in Computing sponsored attendee, 2015, 2016, 2019</li>
+					</ul>
+				</section>
+			</article>
+
+			<!-- Flashcards -->
+			<article id="media-flashcards" class="panel">
+				<header>
+					<h2>Media Flashcards</h2>
+				</header>
+				<p>
+					A friend and I began taking American Sign Language classes through Visually Speaking and North 
+					Seattle College in 2020. We wanted flashcards to help us practice on our own, but had a hard time 
+					finding an existing sloution that did everything we wanted.
+					<br>
+					I created the Media Flashcards project to solve that problem. Features:
+					<ul>
+						<li>Practice Mode</li>
+						<li>Search Mode</li>
+						<li>Option to see sign side, English side, or mixed in Practice Mode</li>
+						<li>Sign side can contain static images, gifs, or videos</li>
+					</ul>
+					The repo is currently private because it contains videos of our instructor demonstrating signs in 
+					the classes we paid for.
+				</p>
+				<section>
+					<img src="./images/media-flashcards-demo.gif" loading="lazy" class="image fit"/>
+					<!-- <div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+						</div>
+					</div> -->
+				</section>
+			</article>
+
+			<!-- Hogwarts Battle -->
+			<article id="hogwarts-battle" class="panel">
+				<header>
+					<h2>Hogwarts Battle</h2>
+				</header>
+				<p>
+					My husband and I love to play the Hogwarts Battle deck building board game. However, one of our 
+					biggest issues with the game is the number of things players need to keep up with at all times, 
+					often resulting in missed steps and overall incorrect game play. 
+					<br>
+					<br>
+					As we're both Software Engineers and were both looking for a project to practice a new programming 
+					language in, we decided to try building it ourselves. We are developing 2 versions in parallel: mine 
+					in Python, his in Rust. We pair program in both languages and review each other's code, but put most 
+					of our energy into developing the game in our respective languages.
+					<br>
+					<br>
+					The repo is currently private due to copyright concerns.
+				</p>
+				<!-- <section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+						</div>
+					</div>
+				</section> -->
+			</article>
+
+			<!-- POUND Setlist Generator -->
+			<article id="pound-setlist-generator" class="panel">
+				<header>
+					<h2>POUND Setlist Generator</h2>
+				</header>
+				<p>
+					I started teaching a fitness format called POUND in 2020. In this format, instructors create a setlist
+					of tracks. POUND provides setlist templates with different difficulties, lengths, track levels, and track types.
+					There are so many track options to insert into each slot, that I get overwhelmed when trying to create
+					or change up a setlist.
+					<br>
+					<br>
+					To solve this, my setlist generator will build a setlsit for me using only songs I know. It is currently
+					a command-line tool that allows me to choose a setlist difficulty, length, and version and returns 
+					a full setlist. I can choose to replace a track with a different one and include arm tracks.
+					<br>
+					<br>
+					I have many more ideas in store for this project. In the mean time, you can view my progress on 
+					<a href="https://github.com/sierra-acy/sierra-acy.github.io" target="_blank">GitHub.</a>
+				</p>
+				<section>
+					<img src="./images/pound-setlist-demo.gif" loading="lazy" class="image fit"/>
+				</section>
+			</article>
+
+			<!-- TEALS  -->
+			<article id="teals" class="panel">
+				<header>
+					<h2>TEALS</h2>
+				</header>
+				<p>
+					<a href="https://www.tealsk12.org/implementation-guide-online/" target="_blank">TEALS, or Tecnology 
+					Education and Literacy in Schools</a>, is a Microsoft-sponsored program that pairs volunteers with 
+					programming experience with high schools around the country, and Canada. Most schools still do not 
+					have any kind of CS or technology progrqams, but of the schools that do, they often do not have access 
+					to teachers who are familiar with the material, so teachers end up teaching CS classes with no more 
+					knowledge than the students.
+					<br>
+					TEALS provides several benefits:
+					<ul>
+						<ol>Schools can implement successful CS programs with the help of knowledgable volunteers</ol>
+						<ol>Students get direct access to volunteers that are part of the industry that can answer questions 
+							about the material and careers alike</ol>
+						<ol>Over several years with the program, classroom teachers can learn the material alongside students 
+							and take over teaching when they are comfortable with it</ol>
+					</ul>
+					
+					I volunteered with TEALS from 2017-2020, and have started again in the 2021 school year. I taught
+					remotely at Walla Walla High School for the 2017-2018 and 2018-2019 school years. Then at Tonasket
+					High School for 2019-2020, and starting in 2021 I'm back at Wa-Hi!
+					<br>
+					I grew up with a family of teachers, so education has alwasy been a very important part of my life. I found
+					from a young age that I enjoyed teaching: my earliest teaching memory is from when I was ___ teaching my 2
+					year old cousin to read using my Hooked on Phonics books. I never considered teaching as a career, but once
+					I found TEALS, I realized it was the one thing I had been missing! I get to be a software engineer AND a 
+					teacher! How could it get better than this?
+				</p>
+				<!-- <section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+						</div>
+					</div>
+				</section> -->
+			</article>
+
+			<!-- TEALS  -->
+			<article id="mentorship" class="panel">
+				<header>
+					<h2>Mentorship</h2>
+				</header>
+				<p>
+					Mentorship is an important part of my professional life. It helps me stay motivated in my job and 
+					reminds me why I love doing what I do. Even in my much needed year off from TEALS, I pretty quickly 
+					realized I missed working with students. I joined <a href="https://mentorsintech.com/" target="_blank">
+					Mentors in Tech, or MinT,</a> where I mentored 2 students on a monthly schedule -- a much more 
+					manageable time commitment for me that year.
+
+					I have had several great mentors in my career so far, starting with my step-dad (or bonus-dad, as we
+					liked to say) Abel Wang, who introduced me to CS. I was lucky to have someone around to help me with 
+					homework, answer my questions, and engage and encourage me in CS, so I am always happy to be that person for someone
+					else. 
+				</p>
+				<!-- <section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+						</div>
+					</div>
+				</section> -->
+			</article>
+
+			<!-- --------------------------------------- -->
+
+			<!-- Creative -->
+			<article id="creative" class="panel">
+				<header>
+					<h2>Creative</h2>
+				</header>
+				<p>
+					My favorite hobby is trying new hobbies, <i>especially</i> creative ones. My creative projects
+					include cosplay, embroidery, sewing, and much more!
+				</p>
+				<section>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#homer-embroidery" class="image fit"><img src="images/Homer-embroidery.jpg"
+									alt=""></a>
+							<p class="dark-text">Homer Simpson Embroidery</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#40s-apron" class="image fit"><img src="images/apron-front.jpg" alt=""></a>
+							<p class="dark-text">1940s Style Apron</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#ac-cosplay" class="image fit"><img src="images/ac-anna-water.JPG" alt=""></a>
+							<p class="dark-text">Animal Crossing Virtual Cosplay</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#flapper-princess" class="image fit"><img src="images/flapper-aurora.jpg"
+									alt=""></a>
+							<p class="dark-text">Flapper Aurora Cosplay</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#dont-starve" class="image fit"><img src="images/dst-wendy-abigail.png" alt=""></a>
+							<p class="dark-text">Don't Starve Wendy Cosplay</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<a href="#riveter-princess" class="image fit"><img src="images/Riveter-group-boxes.jpg"
+									alt=""></a>
+							<p class="dark-text">Anna the Riveter Cosplay</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<!-- ADD PROGRESS PICS FROM INSTA -->
+							<a href="#nurse-joy" class="image fit">
+								<div><img src="images/pokemon-solo.JPG" alt="Nurse Joy cosplay"></div>
+							</a>
+							<p class="dark-text">Nurse Joy Cosplay</p>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<!-- TEXT: work had halloween, wanted to make princess costumes, took pics at whiteboard (can't show), tea party, went home and made cookies; upgrade: sleeves -->
+							<a href="#halloween-princesses" class="image fit"><img
+									src="images/halloween-princesses-2.jpg" alt="Disney Princess Tea Party"></a>
+							<p class="dark-text">Classic Cinderella Cosplay</p>
+						</div>
+				</section>
 			</article>
 
 			<!-- --------------------------------------- -->
@@ -138,7 +568,17 @@
 				<header>
 					<h2>Contact</h2>
 				</header>
+				<script>
+					function copyEmail() {
+						navigator.clipboard.writeText('sierra.acy@gmail.com');
+						var tt = document.getElementById("copiedtooltip");
+						tt.classList.toggle("show");
+					}
+				</script>
 				<a href="https://www.linkedin.com/in/sierraacy" class="solid fa fa-linkedin-square contact-icon"></a>
+				<!-- <a class="icon solid fa-envelope contact-icon arrowpopup" onclick="copyEmail()">
+					<span class="tooltiptext" id="copiedtooltip">Copied!</span>
+				</a> -->
 				<a class="icon solid fa-envelope contact-icon mailtoui" href="mailto:sierra.acy@gmail.com"
 					value="sierra.acy@gmail.com"></a>
 				<a href="https://www.facebook.com/groups/262125768967113"

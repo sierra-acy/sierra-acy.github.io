@@ -24,11 +24,13 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+	}
 
 body {
 	line-height: 1;
@@ -79,20 +81,21 @@ input, select, textarea {
 	align-items: center;
 	height: 15vh;
 	flex-direction: column;
-	margin-bottom: 5vh;
+	margin-bottom: 5vmin;
+	/* justify-items: legacy; */
 }
 
 .tile > .icon {
 	color: #666;
-	font-size: 8vw;
+	font-size: 8vmin;
 	align-self: center;
-	padding-top: 10vh;
+	/* padding-top: 10vmin; */
 }
 
 .tile > .label {
 	color: #444;
-	font-size: 3vw;
-	padding-top: 3vh;
+	font-size: 3vmin;
+	padding-top: 3vmin;
 }
 
 .tile:hover > .icon {
@@ -201,6 +204,7 @@ a:hover{
 
 		.row > .col-4 {
 			width: 33.33333%;
+			/* align-items: end; */
 		}
 
 		.row > .off-4 {
@@ -571,7 +575,7 @@ a:hover{
 				}
 
 					.row > * {
-						padding: 1.25em 0 0 1.25em;
+						/* padding: 1.25em 0 0 1.25em; */
 					}
 
 					.row.gtr-uniform {
@@ -1497,8 +1501,41 @@ a:hover{
 	}
 
 	p, ul, ol, dl, table, blockquote, form {
-		margin-bottom: 2em;
+		/* margin-bottom: 2em; */
 	}
+
+	/* .arrowpopup {
+		position: relative;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.arrowpopup .tooltiptext {
+		visibility: hidden;
+		width: 10vmax;
+		background-color: #856;
+		color: white;
+		text-align: center;
+		border-radius: 4px;
+		/* padding: .5vmin; */
+		position: absolute;
+		bottom: 5vh;
+		left: -4vmax;
+		/* margin-left: -85px; */
+		font-size: small;
+	}
+	.arrowpopup .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: #856 transparent transparent transparent;
+	}
+	.arrowpopup .show {
+		visibility: visible;
+	} */
 
 /* Table */
 
@@ -1588,6 +1625,7 @@ a:hover{
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
 			margin-bottom: 0;
+			margin-top: 5vmin;
 		}
 
 	header {
@@ -1657,7 +1695,7 @@ a:hover{
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: #222222;
+		/* background-color: #222222; */
 		color: #ffffff;
 		border: 0;
 		cursor: pointer;
@@ -1752,6 +1790,7 @@ a:hover{
 
 		ul li {
 			padding-left: 0.5em;
+			color:#633b4f
 		}
 
 	ol {
@@ -1761,6 +1800,7 @@ a:hover{
 
 		ol li {
 			padding-left: 0.25em;
+			color:#633b4f
 		}
 
 /* Actions */
