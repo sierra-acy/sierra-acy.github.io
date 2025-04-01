@@ -109,10 +109,6 @@ input, select, textarea {
 	color:#faa296;
 }
 
-.tile:hover > .label {
-	color:#faa296;
-}
-
 .dark-text {
 	color: #444;
 }
@@ -1508,7 +1504,7 @@ a:hover{
 	}
 
 	p, ul, ol, dl, table, blockquote, form {
-		/* margin-bottom: 2em; */
+		margin-bottom: 2em;
 	}
 
 	/* .arrowpopup {
@@ -1523,11 +1519,11 @@ a:hover{
 		color: white;
 		text-align: center;
 		border-radius: 4px;
-		/* padding: .5vmin; */
+		padding: .5vmin;
 		position: absolute;
 		bottom: 5vh;
 		left: -4vmax;
-		/* margin-left: -85px; */
+		margin-left: -85px;
 		font-size: small;
 	}
 	.arrowpopup .tooltiptext::after {
