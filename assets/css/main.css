@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
-
 /*
 	Astral by HTML5 UP
 	html5up.net | @ajlkn
@@ -1396,7 +1394,7 @@ a:hover{
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Source Sans 3', sans-serif;
 		font-weight: 300;
 		color: #777777;
 		font-size: 20pt;
@@ -1931,7 +1929,7 @@ a:hover{
 			#nav a span {
 				display: block;
 				position: absolute;
-				background: #222222;
+				background: #633b4f;
 				color: #ffffff;
 				top: -2.75em;
 				font-size: 0.3em;
@@ -1943,7 +1941,8 @@ a:hover{
 				-webkit-transition: opacity .25s ease-in-out;
 				-ms-transition: opacity .25s ease-in-out;
 				transition: opacity .25s ease-in-out;
-				width: 5.5em;
+				padding-left: 1em;
+				padding-right: 1em;
 				margin-left: -2.75em;
 			}
 
@@ -1954,7 +1953,7 @@ a:hover{
 					bottom: -0.4em;
 					left: 50%;
 					margin-left: -0.6em;
-					border-top: solid 0.6em #222222;
+					border-top: solid 0.6em #633b4f;
 					border-left: solid 0.6em transparent;
 					border-right: solid 0.6em transparent;
 				}
