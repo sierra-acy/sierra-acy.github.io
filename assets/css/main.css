@@ -3,6 +3,25 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.accordion {
+	background-color: #eee;
+	color: #633b4f;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion_panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+  }
 
 .banner {
 	font-size: 20px;
@@ -1711,7 +1730,7 @@ a:hover{
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: #dfa898;
 		}
 
 		input[type="button"]:active,
@@ -1719,7 +1738,7 @@ a:hover{
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #444444;
+			background-color: #dfa898;
 		}
 
 		input[type="button"].alt,

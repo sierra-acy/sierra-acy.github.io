@@ -110,8 +110,12 @@
 					<h2>Tutoring</h2>
 				</header>
 				<section>
-					<h3>A new tutoring experience is under construction!</h3>
-					<p>Check back soon! In the meantime, feel free to <a href="#contact">email me</a> for more information.</p>
+					<!-- Do accordions here? -->
+					<button class="accordion">More Info</button>
+					<div class="accordion_panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+					
 				</section>
 				<!-- <section>
 					<h3>Java and AP Computer Science A</h3>
@@ -597,7 +601,22 @@
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
 	<script src="https://kit.fontawesome.com/7314ed30dd.js" crossorigin="anonymous"></script>
-
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.display === "block") {
+			  panel.style.display = "none";
+			} else {
+			  panel.style.display = "block";
+			}
+		  });
+		}
+		</script>
 </body>
 
 </html>
