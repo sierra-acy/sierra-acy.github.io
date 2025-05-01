@@ -3,6 +3,24 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.details {
+	margin-bottom: 0em;
+}
+.offering {
+	margin-top:2em;
+}
+.main-button {
+	background-color: #633b4f;
+}
+
+.main-button:hover {
+	background-color: #dfa898;
+}
+
+.main-button:active {
+	background-color: #dfa898;
+}
+
 .accordion {
 	background-color: #eee;
 	color: #633b4f;
@@ -22,6 +40,9 @@
 	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
+	border: solid;
+	border-color: #dfa898;
+	border-width: 1px;
   }
 
 .banner {
@@ -1411,7 +1432,7 @@ a:hover{
 
 	body, input, textarea, select {
 		font-family: 'Source Sans 3', sans-serif;
-		font-weight: 300;
+		font-weight: 350;
 		color: #777777;
 		font-size: 20pt;
 		line-height: 1.75em;
@@ -1731,7 +1752,7 @@ a:hover{
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #dfa898;
+			background-color: #e0e0e0;
 		}
 
 		input[type="button"]:active,
@@ -1739,7 +1760,7 @@ a:hover{
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #dfa898;
+			background-color: #e0e0e0;
 		}
 
 		input[type="button"].alt,
