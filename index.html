@@ -110,7 +110,9 @@
 					<h2>Tutoring</h2>
 				</header>
 				<section>
-					<div class="enroll"></div>
+					<div class="enroll">
+						<button id="btn-enroll" onclick="showForm()">Enroll in Python Group Class</button>
+					</div>
 					<h3>Offerings</h3>
 					<div class="offering">
 						<p class="details"><b>Small Group Python Programming Series</b>
@@ -694,7 +696,7 @@
 	<!-- Google Calendar Appointment Scheduling -->
 	<script>
 		(function() {
-			var target = document.getElementsByClassName("enroll")[0];
+			var target = document.getElementById("btn-enroll");
 			window.addEventListener('load', function() {
 				calendar.schedulingButton.load({
 				url: 'https://calendar.google.com/calendar/appointments/AcZssZ38hFzaoWPU3RScw_N0LJ9mMihtanPfFsVYrjg=?gv=true',
