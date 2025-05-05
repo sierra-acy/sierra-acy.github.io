@@ -111,19 +111,16 @@
 				</header>
 				<section>
 					<div class="info-section">
-						<h3>Book</h3>
-						<button id="btn-enroll" onclick="showForm()">Enroll in Python Group Class</button>
-					</div>
-					<div class="info-section">
 						<h3>Offerings</h3>
 						<div class="offering">
 							<div class="details"><b>Small Group Python Programming Series</b>
-							<br>
-							Pricing: Comes out to $28 per hour. See total for each class in More Info.
-							<br>
-							3-course series covering the Python programming language. Class size ranges form 3-8 
-							students. One hour 2x per week. No prior coding experience requried. This series is 
-							geared toward students age 13-17 or grades 7-12.</div>
+								<br>
+								Pricing: Comes out to $28 per hour. See total for each class in More Info.
+								<br>
+								3-course series covering the Python programming language. Class size ranges form 3-8 
+								students. One hour 2x per week. No prior coding experience requried. This series is 
+								geared toward students age 13-17 or grades 7-12.
+							</div>
 							<button class="accordion">More Info</button>
 							<div class="accordion_panel">
 								<b>Python 101 (14 weeks)</b>
@@ -160,6 +157,7 @@
 									<a href="https://docs.google.com/document/d/1Agc5vDPVI_z85cH5KjMLGYNoYAU_rnTkzLyaf9aU1mw/edit?usp=sharing">View Syllabus</a>
 								</p>
 							</div>
+							<button class="qxCTlb main-button enroll-btn" onclick="showForm()">Enroll in Python Group Class</button>
 						</div>
 						<div class="offering">
 							<div class="details"><b>Java and AP Computer Science A Tutoring</b></div>
@@ -197,6 +195,7 @@
 									<li>Sorting and Searching</li>
 								</ul>
 							</div>
+							<div class="tutoring enroll-btn"></div>
 						</div>
 						<div class="offering">
 							<div class="details"><b>Python Tutoring</b></div>
@@ -220,6 +219,7 @@
 									<li>TBD</li>
 								</ul>
 							</div>
+							<div class="tutoring enroll-btn"></div>
 						</div>
 					</div>
 					<div class="info-section">
@@ -702,15 +702,19 @@
 	<!-- Google Calendar Appointment Scheduling -->
 	<script>
 		(function() {
-			var target = document.getElementById("btn-enroll");
-			window.addEventListener('load', function() {
-				calendar.schedulingButton.load({
-				url: 'https://calendar.google.com/calendar/appointments/AcZssZ38hFzaoWPU3RScw_N0LJ9mMihtanPfFsVYrjg=?gv=true',
-				color: '#039BE5',
-				label: 'Book Tutoring',
-				target,
+			var targets = document.getElementsByClassName("tutoring");
+			for(let i = 0; i < targets.length; i++) {
+				let target = targets[i];
+				window.addEventListener('load', function() {
+					calendar.schedulingButton.load({
+					url: 'https://calendar.google.com/calendar/appointments/AcZssZ38hFzaoWPU3RScw_N0LJ9mMihtanPfFsVYrjg=?gv=true',
+					color: '#633b4f',
+					label: 'Book Tutoring',
+					target,
+					});
 				});
-			});
+			}
+			
 		})();
 	</script>	
 </body>
