@@ -3,16 +3,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-.enroll {
-	margin-bottom:2em;
+
+.info-section {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
-.details {
-	margin-bottom: 0em;
-}
-.offering {
-	margin-top:2em;
-}
 .main-button {
 	background-color: #633b4f;
 }
@@ -23,6 +19,14 @@
 
 .main-button:active {
 	background-color: #dfa898;
+}
+
+.offering {
+	margin-bottom:2em;
+}
+
+.details {
+	margin-bottom: 0em;
 }
 
 .accordion {
@@ -44,9 +48,6 @@
 	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
-	border: solid;
-	border-color: #dfa898;
-	border-width: 1px;
   }
 
 .banner {
