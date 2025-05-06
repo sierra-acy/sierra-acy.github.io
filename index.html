@@ -164,6 +164,7 @@
 								</p>
 							</div>
 							<button class="qxCTlb main-button enroll-btn" onclick="showForm()">Enroll in Python Group Class</button>
+							<div class="enroll"></div>
 						</div>
 						<div class="offering">
 							<div class="details"><b>Java and AP Computer Science A Tutoring</b></div>
@@ -705,18 +706,25 @@
 	</script>
 	<script>
 		function showForm() {
-			console.log("show form button clicked");
-			const parent_form = document.createElement('iframe');
-			parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSc9LK0BMb1_-N8EGah3F_VLoVacJ1xy8QKvD8-NRlpyktOPgg/viewform?embedded=true";
-			parent_form.width = "640";
-			parent_form.height = "2372";
-			parent_form.frameBorder = "0";
-			parent_form.marginHeight = "0";
-			parent_form.marginWidth = "0";
-			parent_form.textContent = "Loading..."
+			let checkForm = document.getElementById("python-enroll-form")
+			if(checkForm) {
+				var acc = document.getElementsByClassName("enroll");
+				acc[0].removeChild(checkForm);
+			} else {
+				const parent_form = document.createElement('iframe');
+				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSc9LK0BMb1_-N8EGah3F_VLoVacJ1xy8QKvD8-NRlpyktOPgg/viewform?embedded=true";
+				parent_form.width = "640";
+				parent_form.height = "2372";
+				parent_form.frameBorder = "0";
+				parent_form.marginHeight = "0";
+				parent_form.marginWidth = "0";
+				parent_form.textContent = "Loading...";
+				parent_form.id="python-enroll-form";
 
-			var acc = document.getElementsByClassName("enroll");
-			acc[0].appendChild(parent_form);
+				var acc = document.getElementsByClassName("enroll");
+				acc[0].appendChild(parent_form);
+			}
+
 		}
 	</script>
 	<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
