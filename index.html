@@ -155,7 +155,10 @@
 									entry-level interview style problems.</p>
 								<p><a href="https://docs.google.com/document/d/1Agc5vDPVI_z85cH5KjMLGYNoYAU_rnTkzLyaf9aU1mw/edit?usp=sharing">View Syllabus</a></p>
 							</div>
-							<button class="qxCTlb main-button enroll-btn" onclick="showForm()">Enroll in Python Group Class</button>
+							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p101')">Enroll in Python 101</button>
+							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p102')">Enroll in Python 102</button>
+							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p103')">Enroll in Python 103</button>
+							<!-- <button class="qxCTlb main-button enroll-btn" onclick="showForm()">Join Waitlist</button> -->
 							<div class="enroll"></div>
 						</div>
 						<div class="offering">
@@ -726,26 +729,53 @@
 		}
 	</script>
 	<script>
-		function showForm() {
+		function showForm(classNum) {
+
+			console.log(classNum);
+			// Remove form if there is one showing and it doesn't match the button clicked
+			let checkForm = document.getElementById("python-enroll-form")
+			if(checkForm && classNum === checkForm.name) {
+				var acc = document.getElementsByClassName("enroll");
+				acc[0].removeChild(checkForm);
+				return;
+			} else if(checkForm) {
+				var acc = document.getElementsByClassName("enroll");
+				acc[0].removeChild(checkForm);
+			}
+
+			// choose correct form
+			const parent_form = document.createElement('iframe');
+			if(classNum === 'p101') {
+				parent_form.src = "https://payform.net/forms/d/e/1FAIpQLSc9LK0BMb1_-N8EGah3F_VLoVacJ1xy8QKvD8-NRlpyktOPgg";
+				parent_form.name = 'p101';
+			} else if(classNum === 'p102') {
+				parent_form.src = "https://payform.net/forms/d/e/1FAIpQLSfOBxyxYP40yV9WX9NIfTQvNx_AYPe_ewdh6ap3OCDg1oReHA";
+				parent_form.name = 'p102';
+			} else if(classNum === 'p103') {
+				parent_form.src = "https://payform.net/forms/d/e/1FAIpQLSdF1B8_oydgvyNpupZWf52o0AfWhuIr75J61m-T5ztl13URLQ";
+				parent_form.name = 'p103';
+			}
+			
+			// form settings
+			parent_form.width = "640";
+			parent_form.height = "1000";
+			parent_form.frameBorder = "0";
+			parent_form.marginHeight = "0";
+			parent_form.marginWidth = "0";
+			parent_form.textContent = "Loading...";
+			parent_form.id="python-enroll-form";
+
+			// show form by appending to div
+			var acc = document.getElementsByClassName("enroll");
+			acc[0].appendChild(parent_form);
+		}
+
+		function hideForm(classNum) {
 			let checkForm = document.getElementById("python-enroll-form")
 			if(checkForm) {
 				var acc = document.getElementsByClassName("enroll");
 				acc[0].removeChild(checkForm);
-			} else {
-				const parent_form = document.createElement('iframe');
-				parent_form.src = "https://payform.net/forms/d/e/1FAIpQLSc9LK0BMb1_-N8EGah3F_VLoVacJ1xy8QKvD8-NRlpyktOPgg";
-				parent_form.width = "640";
-				parent_form.height = "2372";
-				parent_form.frameBorder = "0";
-				parent_form.marginHeight = "0";
-				parent_form.marginWidth = "0";
-				parent_form.textContent = "Loading...";
-				parent_form.id="python-enroll-form";
-
-				var acc = document.getElementsByClassName("enroll");
-				acc[0].appendChild(parent_form);
 			}
-
 		}
 	</script>
 	<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
