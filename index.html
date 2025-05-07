@@ -158,7 +158,9 @@
 							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p101')">Enroll in Python 101</button>
 							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p102')">Enroll in Python 102</button>
 							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p103')">Enroll in Python 103</button>
-							<!-- <button class="qxCTlb main-button enroll-btn" onclick="showForm()">Join Waitlist</button> -->
+							<!-- <button class="qxCTlb main-button enroll-btn" onclick="showForm('p101w')">Join 101 Waitlist</button>
+							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p102w')">Join 102 Waitlist</button>
+							<button class="qxCTlb main-button enroll-btn" onclick="showForm('p103w')">Join 103 Waitlist</button> -->
 							<div class="enroll"></div>
 						</div>
 						<div class="offering">
@@ -754,6 +756,15 @@
 			} else if(classNum === 'p103') {
 				parent_form.src = "https://payform.net/forms/d/e/1FAIpQLSdF1B8_oydgvyNpupZWf52o0AfWhuIr75J61m-T5ztl13URLQ";
 				parent_form.name = 'p103';
+			} else if(classNum === 'p101w') {
+				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSf1Jnv8PXQAnUBF0ToH3DgArqt8wbmDiJsJ1l63j6JBak22Pw/viewform?usp=sharing";
+				parent_form.name = 'p101w';
+			} else if(classNum === 'p102w') {
+				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSdtc7k6DVGlOXtk2bDhg4xz4XfGriSva7hVhMTUOXbjWIqZuA/viewform?usp=sharing";
+				parent_form.name = 'p102w';
+			} else if(classNum === 'p103w') {
+				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSdxK8lIimunNGdBswd0IrMMOXbi4SnAeroPjXS6Ku8iWvKt6w/viewform?usp=sharing";
+				parent_form.name = 'p103w';
 			}
 			
 			// form settings
