@@ -3,6 +3,61 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.custom-p {
+	margin-bottom: .5em;	
+}
+
+.enroll-btn {
+	margin-top: .5em;
+}
+.info-section {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.main-button {
+	color: #ffffff;
+	background-color: #633b4f;
+}
+
+.main-button:hover {
+	/* background-color: #dfa898; */
+	background-color: #633b4f;
+}
+
+.main-button:active {
+	/* background-color: #dfa898; */
+	background-color: #633b4f;
+}
+
+.offering {
+	margin-bottom:2em;
+}
+
+.details {
+	margin-bottom: 0em;
+}
+
+.accordion {
+	background-color: #eee;
+	color: #633b4f;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion_panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+  	overflow: hidden;
+  	transition: max-height 0.2s ease-out;
+  }
 
 .banner {
 	font-size: 20px;
@@ -1391,7 +1446,7 @@ a:hover{
 
 	body, input, textarea, select {
 		font-family: 'Source Sans 3', sans-serif;
-		font-weight: 300;
+		font-weight: 350;
 		color: #777777;
 		font-size: 20pt;
 		line-height: 1.75em;
@@ -1711,7 +1766,7 @@ a:hover{
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #333333;
+			background-color: #e0e0e0;
 		}
 
 		input[type="button"]:active,
@@ -1719,7 +1774,7 @@ a:hover{
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #444444;
+			background-color: #e0e0e0;
 		}
 
 		input[type="button"].alt,
