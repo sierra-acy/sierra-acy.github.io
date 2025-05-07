@@ -293,6 +293,12 @@
 						<h3>Contact</h3>
 						<p>Please reach out to me via email at: <a class="mailtoui" href="mailto:business@sierraacy.com" value="business@sierraacy.com">business@sierraacy.com</a></p>
 					</div>
+					<div class="info-section">
+						<h3>Subscribe</h3>
+						<p class="custom-p">Want to keep up to date with new offerings, enrollment period openings, and other major updates? Subscribe to my newsletter!</p>
+						<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm()">Subscribe</button>
+						<div class="subscribe"></div>
+					</div>
 				</section>
 			</article>
 
@@ -732,8 +738,6 @@
 	</script>
 	<script>
 		function showForm(classNum) {
-
-			console.log(classNum);
 			// Remove form if there is one showing and it doesn't match the button clicked
 			let checkForm = document.getElementById("python-enroll-form")
 			if(checkForm && classNum === checkForm.name) {
@@ -780,12 +784,30 @@
 			var acc = document.getElementsByClassName("enroll");
 			acc[0].appendChild(parent_form);
 		}
-
-		function hideForm(classNum) {
-			let checkForm = document.getElementById("python-enroll-form")
+	</script>
+	<script>
+		function showSubscribeForm() {
+			// Remove form if there is one showing and it doesn't match the button clicked
+			let checkForm = document.getElementById("subscribe-form")
 			if(checkForm) {
-				var acc = document.getElementsByClassName("enroll");
+				var acc = document.getElementsByClassName("subscribe");
 				acc[0].removeChild(checkForm);
+			} else {
+				const parent_form = document.createElement('iframe');
+				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSdYJ3D-50FM5NEkD1I-ieYZxPSGORucXDAHFPdZ8IapRzrCLA/viewform?usp=sharing";
+				
+				// form settings
+				parent_form.width = "640";
+				parent_form.height = "650";
+				parent_form.frameBorder = "0";
+				parent_form.marginHeight = "0";
+				parent_form.marginWidth = "0";
+				parent_form.textContent = "Loading...";
+				parent_form.id="subscribe-form";
+
+				// show form by appending to div
+				var acc = document.getElementsByClassName("subscribe");
+				acc[0].appendChild(parent_form);
 			}
 		}
 	</script>
