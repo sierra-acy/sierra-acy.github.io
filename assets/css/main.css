@@ -182,7 +182,7 @@ input, select, textarea {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
 	color:#8e607a;
 	font-weight:400;
 }
@@ -1537,7 +1537,7 @@ a:hover{
 
 	hr {
 		border: 0;
-		border-top: solid 1px #ddd;
+		border-top: solid 2px #ddd;
 		padding: 1.5em 0 0 0;
 		margin: 1.75em 0 0 0;
 	}
