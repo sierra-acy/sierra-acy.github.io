@@ -3,6 +3,10 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+.back-btn {
+	font-size: 10pt;
+}
+
 .custom-p {
 	margin-bottom: .5em;	
 }
@@ -182,7 +186,7 @@ input, select, textarea {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: underline;
 	color:#8e607a;
 	font-weight:400;
 }
@@ -1537,7 +1541,7 @@ a:hover{
 
 	hr {
 		border: 0;
-		border-top: solid 1px #ddd;
+		border-top: solid 2px #ddd;
 		padding: 1.5em 0 0 0;
 		margin: 1.75em 0 0 0;
 	}
