@@ -143,8 +143,8 @@
 					<div class="info-section">
 						<h3 id="subscribe-sect">Subscribe</h3>
 						<p class="custom-p">Want to keep up to date with new offerings, enrollment period openings, and other major updates? Subscribe to my newsletter!</p>
-						<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm()">Subscribe</button>
-						<div class="subscribe"></div>
+						<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm('tutoring')">Subscribe</button>
+						<div class="subscribe" id="subscribe-tutoring"></div>
 					</div>
 					<div class="info-section">
 						<h3 id="contact-sect">Contact</h3>
@@ -527,8 +527,16 @@
 
 			<!-- Contact -->
 			<article id="contact" class="panel">
+				<!-- <div class="info-section"> -->
 				<header>
-					<h2>Contact Sierra Acy</h2>
+					<h2>Subscribe</h2>
+					<p class="custom-p">Want to keep up to date with new offerings, enrollment period openings, and other major updates? Subscribe to my newsletter!</p>
+					<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm('contact')">Subscribe</button>
+					<div class="subscribe" id="subscribe-contact"></div>
+				</header>
+					<!-- </div> -->
+				<header>
+					<h2>Contact</h2>
 				</header>
 				<a href="https://www.linkedin.com/in/sierraacy" class="fa-solid fa fa-linkedin-square contact-icon"></a>
 				<a class="fa-solid fa-envelope contact-icon mailtoui" href="mailto:business@sierraacy.com"
@@ -628,12 +636,12 @@
 		}
 	</script>
 	<script>
-		function showSubscribeForm() {
+		function showSubscribeForm(containerLocation) {
 			// Remove form if there is one showing and it doesn't match the button clicked
-			let checkForm = document.getElementById("subscribe-form")
+			let checkForm = document.getElementById("subscribe-form-" + containerLocation)
 			if(checkForm) {
-				var acc = document.getElementsByClassName("subscribe");
-				acc[0].removeChild(checkForm);
+				var acc = document.getElementById("subscribe-" + containerLocation);
+				acc.removeChild(checkForm);
 			} else {
 				const parent_form = document.createElement('iframe');
 				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSdYJ3D-50FM5NEkD1I-ieYZxPSGORucXDAHFPdZ8IapRzrCLA/viewform?usp=sharing";
@@ -645,11 +653,12 @@
 				parent_form.marginHeight = "0";
 				parent_form.marginWidth = "0";
 				parent_form.textContent = "Loading...";
-				parent_form.id="subscribe-form";
+				parent_form.id="subscribe-form-" + containerLocation;
 
 				// show form by appending to div
-				var acc = document.getElementsByClassName("subscribe");
-				acc[0].appendChild(parent_form);
+				var acc = document.getElementById("subscribe-" + containerLocation);
+				// var acc = document.getElementsByClassName("subscribe");
+				acc.appendChild(parent_form);
 			}
 		}
 	</script>

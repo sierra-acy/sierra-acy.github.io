@@ -1,0 +1,66 @@
+[1mdiff --git a/index.html b/index.html[m
+[1mindex defa1ad..c556df1 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -143,8 +143,8 @@[m
+ 					<div class="info-section">[m
+ 						<h3 id="subscribe-sect">Subscribe</h3>[m
+ 						<p class="custom-p">Want to keep up to date with new offerings, enrollment period openings, and other major updates? Subscribe to my newsletter!</p>[m
+[31m-						<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm()">Subscribe</button>[m
+[31m-						<div class="subscribe"></div>[m
+[32m+[m						[32m<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm('tutoring')">Subscribe</button>[m
+[32m+[m						[32m<div class="subscribe" id="subscribe-tutoring"></div>[m
+ 					</div>[m
+ 					<div class="info-section">[m
+ 						<h3 id="contact-sect">Contact</h3>[m
+[36m@@ -527,8 +527,16 @@[m
+ [m
+ 			<!-- Contact -->[m
+ 			<article id="contact" class="panel">[m
+[32m+[m				[32m<!-- <div class="info-section"> -->[m
+ 				<header>[m
+[31m-					<h2>Contact Sierra Acy</h2>[m
+[32m+[m					[32m<h2>Subscribe</h2>[m
+[32m+[m					[32m<p class="custom-p">Want to keep up to date with new offerings, enrollment period openings, and other major updates? Subscribe to my newsletter!</p>[m
+[32m+[m					[32m<button class="qxCTlb main-button enroll-btn" onclick="showSubscribeForm('contact')">Subscribe</button>[m
+[32m+[m					[32m<div class="subscribe" id="subscribe-contact"></div>[m
+[32m+[m				[32m</header>[m
+[32m+[m					[32m<!-- </div> -->[m
+[32m+[m				[32m<header>[m
+[32m+[m					[32m<h2>Contact</h2>[m
+ 				</header>[m
+ 				<a href="https://www.linkedin.com/in/sierraacy" class="fa-solid fa fa-linkedin-square contact-icon"></a>[m
+ 				<a class="fa-solid fa-envelope contact-icon mailtoui" href="mailto:business@sierraacy.com"[m
+[36m@@ -628,12 +636,12 @@[m
+ 		}[m
+ 	</script>[m
+ 	<script>[m
+[31m-		function showSubscribeForm() {[m
+[32m+[m		[32mfunction showSubscribeForm(containerLocation) {[m
+ 			// Remove form if there is one showing and it doesn't match the button clicked[m
+[31m-			let checkForm = document.getElementById("subscribe-form")[m
+[32m+[m			[32mlet checkForm = document.getElementById("subscribe-form-" + containerLocation)[m
+ 			if(checkForm) {[m
+[31m-				var acc = document.getElementsByClassName("subscribe");[m
+[31m-				acc[0].removeChild(checkForm);[m
+[32m+[m				[32mvar acc = document.getElementById("subscribe-" + containerLocation);[m
+[32m+[m				[32macc.removeChild(checkForm);[m
+ 			} else {[m
+ 				const parent_form = document.createElement('iframe');[m
+ 				parent_form.src = "https://docs.google.com/forms/d/e/1FAIpQLSdYJ3D-50FM5NEkD1I-ieYZxPSGORucXDAHFPdZ8IapRzrCLA/viewform?usp=sharing";[m
+[36m@@ -645,11 +653,12 @@[m
+ 				parent_form.marginHeight = "0";[m
+ 				parent_form.marginWidth = "0";[m
+ 				parent_form.textContent = "Loading...";[m
+[31m-				parent_form.id="subscribe-form";[m
+[32m+[m				[32mparent_form.id="subscribe-form-" + containerLocation;[m
+ [m
+ 				// show form by appending to div[m
+[31m-				var acc = document.getElementsByClassName("subscribe");[m
+[31m-				acc[0].appendChild(parent_form);[m
+[32m+[m				[32mvar acc = document.getElementById("subscribe-" + containerLocation);[m
+[32m+[m				[32m// var acc = document.getElementsByClassName("subscribe");[m
+[32m+[m				[32macc.appendChild(parent_form);[m
+ 			}[m
+ 		}[m
+ 	</script>[m
