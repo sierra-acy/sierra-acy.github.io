@@ -23,11 +23,11 @@
 	<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
 </head>
 
-<body class="is-preload">
+<body class="is-preload root-container">
 	<section class="header">
 		<div class="banner">
-			<p class="banner-text custom-p"><b>Latest:</b> Small Group Python Programming Series Available Now! 
-				Check out the <a href="#tutoring">Tutoring</a> page!
+			<p class="banner-text custom-p"><b>Latest:</b><span> Small Group Python Programming Series Available Now! 
+				Check out the </span><a href="#tutoring">Tutoring</a><span> page!</span>
 			</p>
 		</div>
 		
@@ -68,15 +68,15 @@
 				<section>
 					<div class="row">
 						<div class="col-4 col-6-medium col-12-small tile">
-							<a href="#teals" class="fa-solid fa-school"></a>
+							<a href="#teals" class="fa-solid fa-school custom-icon"></a>
 							<p class="label">TEALS</p>
 						</div>
 						<div class="col-4 col-6-medium col-12-small tile">
-							<a href="#mentorship" class="fa-solid fa-handshake"></a>
+							<a href="#mentorship" class="fa-solid fa-handshake custom-icon"></a>
 							<p class="label">Mentorship</p>
 						</div>
 						<div class="col-4 col-6-medium col-12-small tile">
-							<a href="#media" class="fa-solid fa-microphone"></a>
+							<a href="#media" class="fa-solid fa-microphone custom-icon"></a>
 							<p class="label">Media</p>
 						</div>
 					</div>
@@ -536,9 +536,9 @@
 				<header>
 					<h2>Contact</h2>
 				</header>
-				<a class="fa-solid fa-envelope contact-icon mailtoui" href="mailto:business@sierraacy.com"
+				<a class="fa-solid fa-envelope custom-icon mailtoui" href="mailto:business@sierraacy.com"
 					value="business@sierraacy.com"></a>
-				<a href="https://www.linkedin.com/in/sierraacy" class="fa-solid fa fa-linkedin-square contact-icon" style="margin: 0;"></a>
+				<a href="https://www.linkedin.com/in/sierraacy" class="fa-solid fa fa-linkedin-square custom-icon" style="margin: 0;"></a>
 			</article>
 		</div>
 
@@ -560,22 +560,6 @@
 	<script src="assets/js/main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
 	<script src="https://kit.fontawesome.com/7314ed30dd.js" crossorigin="anonymous"></script>
-	<script>
-		var acc = document.getElementsByClassName("accordion");
-		var i;
-
-		for (i = 0; i < acc.length; i++) {
-		acc[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var panel = this.nextElementSibling;
-			if (panel.style.maxHeight) {
-				panel.style.maxHeight = null;
-			} else {
-				panel.style.maxHeight = panel.scrollHeight + "px";
-			}
-		});
-		}
-	</script>
 	<script>
 		function toggleForm(classNum) {
 			// look for that element id
