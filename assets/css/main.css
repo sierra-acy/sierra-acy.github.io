@@ -8,6 +8,10 @@
 	--main-text-color-hover: rgba(146, 200, 235, 0.85);
 }
 
+.embedded-list {
+	margin-bottom: 1em;
+}
+
 #subscribe-contact {
 	margin-bottom: 5vh;
 }
