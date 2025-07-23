@@ -4,7 +4,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 .root-container {
-	--main-text-color: #633b4f;
+	--main-text-color: #03092E;
+	--main-text-color-hover: rgba(146, 200, 235, 0.85);
 }
 
 #subscribe-contact {
@@ -63,7 +64,7 @@
 }
 
 .main-button:hover {
-	background-color: rgba(99, 59, 79, 0.85);
+	background-color: var(--main-text-color-hover);
 }
 
 .main-button:active {
@@ -220,7 +221,7 @@ a {
 }
 
 a:hover{
-	color: #dfa898;
+	color: var(--main-text-color-hover);
 }
 
 /* Row */
@@ -1458,7 +1459,7 @@ a:hover{
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/blue-bg.png");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -2012,7 +2013,7 @@ a:hover{
 			#nav a span {
 				display: block;
 				position: absolute;
-				background: var(--main-text-color);
+				background: var(--main-text-color-hover);
 				color: white;
 				top: -2.75em;
 				font-size: 0.3em;
@@ -2037,7 +2038,7 @@ a:hover{
 					bottom: -0.4em;
 					left: 50%;
 					margin-left: -0.6em;
-					border-top: solid 0.6em var(--main-text-color);
+					border-top: solid 0.6em var(--main-text-color-hover);
 					border-left: solid 0.6em transparent;
 					border-right: solid 0.6em transparent;
 				}
